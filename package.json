@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "compilerOptions": {
+    "target": "es6"
+  },
   "scripts": {
     "dev": "nodemon src/app.ts",
     "ts:build": "rm -rf ./dist && tsc",
