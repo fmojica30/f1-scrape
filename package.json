@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "compilerOptions": {
-    "target": "es6"
+    "target": "es2017"
   },
   "scripts": {
     "dev": "nodemon src/app.ts",

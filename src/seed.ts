@@ -5,7 +5,6 @@ const connectionString = process.env.DATABASE_URL || "";
 const connection = mysql.createConnection(connectionString);
 connection.connect();
 
-
 const loadDriverInfo = async () => {
   const driverInfo = await getDriversInfo();
   const sql =
