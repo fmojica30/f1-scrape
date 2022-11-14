@@ -7,7 +7,7 @@ const connectionString = process.env.DATABASE_URL || '';
 const connection = mysql.createConnection(connectionString);
 connection.connect();
 app.get('/api/drivers', (req, res) => {
-    const query = 'Select * from Characters;';
+    const query = 'select * from driver';
     connection.query(query, (err, rows) => {
         if (err)
             throw err;
