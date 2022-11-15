@@ -11,6 +11,7 @@
     "dev": "nodemon src/app.ts",
     "ts:build": "rm -rf ./dist && tsc",
     "prestart": "npm run ts:build",
+    "build": "npm install && ts:build",
     "start": "node dist/app.js",
     "seed:db": "nodemon ./src/seed.ts"
   },
